@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Random Colour Generator</title>
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+		*{
+			margin: 0;
+			padding: 0;
+			font-family: 'Quicksand', sans-serif;
+		}
+		body{
+			background: #000000;
+		}
+		.main{
+			width: 350px;
+			height: 250px;
+			background: white;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+		}
+		#text{
+			font-size: 3rem;
+			margin-bottom: 20px;
+		}
+		.generateBtn{
+			padding: 10px 20px;
+			font-size: 1.1rem;
+			border: none;
+			outline: none;
+			cursor: pointer;
+			background: #1687a7;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<div class="main">
+		<div id="text">#000000</div>
+		<button onclick="generateColor()" class="generateBtn">
+			Generate Color
+		</button>
+	</div>
+</body>
+<script type="text/javascript">
+	function generateColor() {
+		var randomColor = (Math.floor(Math.random()*16777216)).toString(16);
+		console.log(randomColor)
+		document.body.style.backgroundColor = '#' + randomColor;
+		var text = document.getElementById('text');
+		text.innerText = '#' + randomColor;
+	}
+</script>
+</html>
