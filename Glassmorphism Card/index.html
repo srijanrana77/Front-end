@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		body{
+			background: #6E33B1;
+			font-family: "Poppins", sans-serif;
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			overflow-x: hidden; 
+		}
+		.circle{
+			border-radius: 50%;
+			position: absolute;
+			z-index: -1;
+		}
+		.one{
+			background-image: linear-gradient(to bottom right, #ffbb00, #facc79);
+			width: 15rem;
+			height: 15rem;
+			left: 60%;
+			top: 25%;
+		}
+		.two
+		{
+			background-image: linear-gradient(to bottom right, #fb5406, #eb6d5f);
+			width: 8rem;
+			height: 8rem;
+			left: 35%;
+			top: 30%;
+		}
+		.glass{
+			max-width: 30rem;
+			padding: 2.5em 2em;
+			background: rgba(255,255,255,0.2);
+			border-radius: 2em;
+			color: white;
+			backdrop-filter: blur(20px);
+			border: 2px solid #bbbfc0;
+			display: grid;
+			grid-template-columns: 15% auto 25%; 
+		}
+		.img img{
+			width: 100%;
+			border-radius: 50%;
+		}
+		.info{
+			padding-left: 1.2rem;
+		}
+		.info .name{
+			padding: 0.5rem 0 2rem 0;
+		}
+		.info .name h3{
+			font-size: 1.2rem;
+			line-height: 110%;
+			font-weight: 400;
+		}
+		.info .name p{
+			font-size: 0.9rem;
+			color: #ddd;
+		}
+		.info .description{
+			color: #fff;
+		}
+		.info .description .col{
+			color: #ddd;
+			padding-right: 1rem;
+		}
+		.btn{
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+		.btn .far{
+			text-align: right;
+			color: #fff;
+			font-weight: 500;
+			cursor: pointer;
+		}
+		.btn button{
+			background: #f79b71;
+			border: none;
+			padding: 4px 10px;
+			align-self: flex-end;
+			border-radius: 5px;
+			color: white;
+			font-size: 0.8rem;
+			font-weight: bold;
+			width: auto;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<div class="circle one"></div>
+	<div class="circle two"></div>
+	<div class="glass">
+		<div class="img">
+			<img src="image.jpg">
+		</div>
+		<div class="info">
+			<div class="name">
+				<h3>Srijan Rana</h3>
+				<p>FullStack Developer</p>
+			</div>
+			<div class="description">
+				<table>
+					<tr>
+						<td class="col">Salary: </td><td>5000</td>
+					</tr>
+					<tr>
+						<td class="col">Company: </td><td>Google</td>
+					</tr>
+					<tr>
+						<td class="col">Location: </td><td>New York</td>
+					</tr>
+				</table>
+			</div>
+			<div class="btn">
+				<i class="fa fa-bookmark"></i>
+				<button>Follow Now</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
